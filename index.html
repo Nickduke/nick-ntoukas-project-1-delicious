@@ -14,8 +14,9 @@
     ></script>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header" id="home">
-      <div class="wrapper-home">
+      <div class="header__wrapper">
         <h1 class="logo">
           <a href="#home">delicious</a>
         </h1>
@@ -61,9 +62,10 @@
       <!-- end of header -->
     </header>
 
-    <!-- main -->
+    <!-- MAIN -->
     <main id="home-main-content">
-      <section class="recipes">
+      <!-- RECIPES SECTION -->
+      <section class="recipes" id="recipes">
         <div class="recipes__container">
           <div class="recipes__container-row-1">
             <div class="recipes__container-tile-1">
@@ -96,6 +98,7 @@
             <div class="recipes__container-tile-4">
               <ul class="menu-list">
                 <li>
+                  <i class="fa-solid fa-lemon"></i>
                   <h3>vegetarian</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -104,6 +107,7 @@
                   </p>
                 </li>
                 <li>
+                  <i class="fa-solid fa-utensils"></i>
                   <h3>appetizers</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -112,6 +116,7 @@
                   </p>
                 </li>
                 <li>
+                  <i class="fa-solid fa-mug-saucer"></i>
                   <h3>desserts</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -120,6 +125,7 @@
                   </p>
                 </li>
                 <li>
+                  <i class="fa-solid fa-martini-glass"></i>
                   <h3>drinks</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -128,6 +134,7 @@
                   </p>
                 </li>
                 <li>
+                  <i class="fa-solid fa-leaf"></i>
                   <h3>salads</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -136,6 +143,7 @@
                   </p>
                 </li>
                 <li>
+                  <i class="fa-solid fa-spoon"></i>
                   <h3>side dishes</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -144,10 +152,126 @@
                   </p>
                 </li>
               </ul>
+              <!-- end of .recipes__container-tile-4 -->
             </div>
+            <!-- end of .recipes__container-row-2 -->
+          </div>
+          <!-- end of .recipes__container -->
+        </div>
+        <!-- end of .recipes section -->
+      </section>
+
+      <!-- RESTAURANTS SECTION -->
+      <section class="restaurants" id="restaurants">
+        <div class="restaurants__wrapper">
+          <span class="restaurants__sticker">
+            <img src="./assets/home-circle-text.png" alt="" />
+          </span>
+          <div>
+            <img src="./assets/home-4.jpeg" alt="" />
+            <h2>our restaurants</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium consequatur illum molestiae saepe laudantium id nulla
+              quia doloribus beatae eos!
+            </p>
           </div>
         </div>
+        <!-- end of .restaurants section -->
       </section>
+
+      <!-- GALLERY SECTION -->
+      <section class="gallery" id="gallery">
+        <div class="gallery__wrapper">
+          <img src="./assets/home-5.jpeg" alt="" />
+          <img src="./assets/home-6.jpeg" alt="" />
+          <img src="./assets/home-7.jpeg" alt="" />
+          <img src="./assets/home-8.jpeg" alt="" />
+          <img src="./assets/home-9.jpeg" alt="" />
+          <img src="./assets/home-10.jpeg" alt="" />
+        </div>
+        <!-- end of .gallery section -->
+      </section>
+
+      <!-- REVIEWS SECTION -->
+      <section class="reviews" id="reviews">
+        <div class="reviews__wrapper">
+          <div class="quotation-1">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+          <div class="review-container">
+            <h2>hungry clients</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
+              blanditiis dolores. Enim, eos consectetur! Fugiat modi neque
+              nostrum ex praesentium aliquid nesciunt porro illum officiis nobis
+              nam recusandae quasi, delectus obcaecati quas velit? Ipsum nihil
+              necessitatibus voluptas laudantium non a expedita itaque
+              consequuntur ullam possimus reprehenderit dolor explicabo,
+              corrupti obcaecati!
+            </p>
+            <div class="arrow-container">
+              <i class="fa-solid fa-chevron-left"></i>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="quotation-2">
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+          <!-- end of .reviews__wrapper -->
+        </div>
+        <!-- end of .reviews section -->
+      </section>
+      <!-- end of main -->
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="contact">
+          <h3>delicious</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+            aliquid architecto non aperiam dolor expedita facilis temporibus
+            alias est magni?
+          </p>
+          <p>A delicious restaurant</p>
+          <p>Toronto, Ontario</p>
+          <p>yum@food.com</p>
+          <p>+1 234 567 8910</p>
+        </div>
+        <div class="recent-posts">
+          <h4>recent posts</h4>
+          <ul>
+            <li>Beetroot water spinach okra</li>
+            <li>Chestnut ricebean pea catsear courgette</li>
+            <li>Summer purslane spinach arugala pea</li>
+            <li>Tatsoi aubergine spring onion bush</li>
+            <li>Tomato kale radicchio turnip chicory</li>
+            <li>Salsify pea sprouts fava bean</li>
+          </ul>
+        </div>
+        <div class="subscribe-now">
+          <h4>subscribe now</h4>
+          <p>Get all of our newest recipes immediately in your inbox!</p>
+          <form action="">
+            <label for="">
+              <input type="text" />
+            </label>
+          </form>
+          <ul class="socials-list">
+            <li>
+              <i class="fa-brands fa-facebook-f"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
