@@ -48,13 +48,25 @@ h4 {
 
 ul {
   list-style: none;
+  li {
+    font-size: 1.8rem;
+  }
 }
 
 a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s linear;
+  text-transform: uppercase;
+  font-family: $headingFont;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+a:hover {
+  opacity: 0.5;
+  color: $green;
 }
 
 p {
@@ -68,6 +80,7 @@ body > p {
   color: $white;
   line-height: 44px;
   letter-spacing: 0.3px;
+  font-size: 1.3rem;
   span {
     color: $green;
   }

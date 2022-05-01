@@ -1,1 +1,22 @@
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
 
+// Button
+button {
+  font-family: $bodyFont;
+  padding: 1.2rem 3rem;
+  background: $green;
+  color: $white;
+  border: 1px solid $green;
+  transition: 0.3s linear;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: transparent;
+  color: $black;
+}
