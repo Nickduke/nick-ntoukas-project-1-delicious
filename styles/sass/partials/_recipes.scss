@@ -49,11 +49,17 @@
   }
 }
 
-// Tile 2
+// Tile 4
 .tile-4 {
   background: rgba(128, 128, 128, 0.068);
 }
 
 .menu-list {
   display: flex;
+  flex-direction: column;
+}
+
+.icon-title-container {
+  display: flex;
+  align-items: center;
 }

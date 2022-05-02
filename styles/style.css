@@ -255,7 +255,6 @@ template {
 
 .wrapper {
   max-width: 1260px;
-  width: 90%;
   margin: 0 auto;
 }
 
@@ -388,6 +387,11 @@ footer h4 {
   font-size: 1.4rem;
 }
 
+.menu-list p {
+  font-size: 1.4rem;
+  font-family: "Lora", serif;
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,4 +496,17 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icon-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

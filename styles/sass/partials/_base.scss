@@ -1,10 +1,8 @@
 .wrapper {
   max-width: 1260px;
-  width: 90%;
   margin: 0 auto;
 }
 
-// Button
 button {
   font-family: $bodyFont;
   padding: 1.4rem 3rem;
@@ -25,3 +23,8 @@ img {
   display: block;
   max-width: 100%;
 }
+
+// Apply to gallery ul only
+// ul {
+//   padding: 0;
+// }
