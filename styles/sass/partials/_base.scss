@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: 1260px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -14,7 +14,8 @@ button {
   text-transform: uppercase;
 }
 
-button:hover {
+button:hover,
+button:focus {
   background: transparent;
   color: $black;
 }

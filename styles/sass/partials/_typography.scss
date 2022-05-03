@@ -64,7 +64,8 @@ a {
   letter-spacing: 0.3px;
 }
 
-a:hover {
+a:hover,
+a:focus {
   opacity: 0.5;
   color: $green;
 }

@@ -1,4 +1,6 @@
 .recipes__container {
+  margin: 0 auto;
+  max-width: 100%;
   img {
     display: block;
     min-width: 100%;
@@ -15,17 +17,18 @@
   justify-content: center;
 }
 
-// Tile 1
 .recipes__container-tile {
   min-width: 50%;
 }
+
+// Tile 1
 
 .tile-1 {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
+  flex-wrap: wrap;
   h2,
   p {
     margin: 30px 200px;
@@ -52,14 +55,21 @@
 // Tile 4
 .tile-4 {
   background: rgba(128, 128, 128, 0.068);
+  display: flex;
+  align-items: center;
+  h4,
+  p {
+    padding-left: 3rem;
+  }
 }
 
 .menu-list {
   display: flex;
-  flex-direction: column;
-}
-
-.icon-title-container {
-  display: flex;
-  align-items: center;
+  li {
+    display: flex;
+    margin: 3em 3em;
+  }
+  i {
+    font-size: 4rem;
+  }
 }

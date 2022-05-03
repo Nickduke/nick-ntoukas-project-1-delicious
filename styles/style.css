@@ -254,7 +254,7 @@ template {
 }
 
 .wrapper {
-  max-width: 1260px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -270,7 +270,8 @@ button {
   text-transform: uppercase;
 }
 
-button:hover {
+button:hover,
+button:focus {
   background: transparent;
   color: #2e2e2e;
 }
@@ -344,7 +345,8 @@ a {
   letter-spacing: 0.3px;
 }
 
-a:hover {
+a:hover,
+a:focus {
   opacity: 0.5;
   color: #539908;
 }
@@ -426,6 +428,10 @@ header .wrapper {
           justify-content: space-between;
 }
 
+.recipes__container {
+  margin: 0 auto;
+  max-width: 100%;
+}
 .recipes__container img {
   display: block;
   min-width: 100%;
@@ -467,6 +473,8 @@ header .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .tile-1 h2,
 .tile-1 p {
@@ -490,23 +498,29 @@ header .wrapper {
 
 .tile-4 {
   background: rgba(128, 128, 128, 0.068);
-}
-
-.menu-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.icon-title-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.tile-4 h4,
+.tile-4 p {
+  padding-left: 3rem;
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.menu-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3em 3em;
+}
+.menu-list i {
+  font-size: 4rem;
 }
