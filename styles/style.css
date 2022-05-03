@@ -524,3 +524,21 @@ header .wrapper {
 .menu-list i {
   font-size: 4rem;
 }
+
+footer {
+  background: #333333;
+  padding: 90px 0 50px 0;
+}
+footer .footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 90px;
+}
+
+body > p {
+  background: #2e2e2e;
+}
