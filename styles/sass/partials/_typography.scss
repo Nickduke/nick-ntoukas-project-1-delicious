@@ -62,6 +62,7 @@ a {
   font-family: $headingFont;
   line-height: 24px;
   letter-spacing: 0.3px;
+  font-weight: bold;
 }
 
 a:hover,
@@ -77,11 +78,6 @@ p {
 }
 
 body > p {
-  font-family: $bodyFont;
-  color: $white;
-  line-height: 44px;
-  letter-spacing: 0.3px;
-  font-size: 1.3rem;
   span {
     color: $green;
   }
@@ -97,6 +93,7 @@ body > p {
   }
 }
 
+// Footer
 footer {
   h3 {
     color: $green;

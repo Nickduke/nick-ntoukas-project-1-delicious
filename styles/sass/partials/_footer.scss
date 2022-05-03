@@ -4,11 +4,8 @@ footer {
   .footer__container {
     display: flex;
     justify-content: space-between;
-    p {
-      display: flex;
-      flex-wrap: wrap;
-    }
     > * {
+      margin: 0 5em;
       flex: 1;
     }
     ul {
@@ -17,10 +14,115 @@ footer {
   }
 }
 
+// .contact
+.contact {
+  h3 {
+    padding-bottom: 30px;
+  }
+  p {
+    border-bottom: 0.9px solid $brownGrey;
+    letter-spacing: 0.3px;
+    padding-bottom: 10px;
+  }
+  :nth-child(2) {
+    padding-bottom: 20px;
+  }
+  :nth-child(6) {
+    border-bottom: none;
+  }
+  :nth-child(3) {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  :nth-child(4) {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+// .recent-posts
+.recent-posts {
+  h4 {
+    padding-bottom: 25px;
+  }
+  li {
+    font-size: 1.3rem;
+    line-height: 44px;
+    letter-spacing: 0.3px;
+    border-bottom: 0.9px solid $brownGrey;
+  }
+  :nth-child(6) {
+    border-bottom: none;
+  }
+}
+
+// .subscribe-now
+.subscribe-now {
+  h4 {
+    padding-bottom: 35px;
+  }
+  p {
+    font-size: 1.3rem;
+    letter-spacing: 0.3px;
+  }
+  button {
+    margin-left: 0;
+    padding: 10px;
+  }
+  button:hover,
+  button:focus {
+    color: $white;
+  }
+  input,
+  textarea {
+    padding: 10px;
+    border: none;
+    // Not $brownGrey due to not enough contrast with placeholder - changed to darker grey
+    background: rgb(78, 78, 78);
+    font-family: $bodyFont;
+    margin-bottom: 20px;
+
+    &::placeholder {
+      font-size: 1.3rem;
+      color: $white;
+      font-style: italic;
+      text-align: justify;
+      font-family: $bodyFont;
+    }
+    &:focus {
+      border-bottom: 1px solid $green;
+      outline: none;
+    }
+  }
+}
+
+.socials-list {
+  display: flex;
+  border-top: 0.9px solid $brownGrey;
+  li {
+    padding: 15px 20px 0 0;
+    color: $white;
+  }
+  li:hover,
+  li:focus {
+    opacity: 0.1;
+    color: $green;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.2s linear;
+  }
+}
+
 // Copyright 'footer'
 .copyright-footer {
   background: $black;
   p {
-    text-align: center;
+    line-height: 44px;
+    font-family: $headingFont;
+    padding-left: 70px;
+    span {
+      color: $green;
+    }
   }
 }

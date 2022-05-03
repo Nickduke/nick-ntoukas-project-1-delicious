@@ -343,6 +343,7 @@ a {
   font-family: "Raleway", sans-serif;
   line-height: 24px;
   letter-spacing: 0.3px;
+  font-weight: bold;
 }
 
 a:hover,
@@ -357,13 +358,6 @@ p {
   letter-spacing: 0.3px;
 }
 
-body > p {
-  font-family: "Lora", serif;
-  color: #f6f6f6;
-  line-height: 44px;
-  letter-spacing: 0.3px;
-  font-size: 1.3rem;
-}
 body > p span {
   color: #539908;
 }
@@ -539,14 +533,8 @@ footer .footer__container {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-footer .footer__container p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
 footer .footer__container > * {
+  margin: 0 5em;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -555,9 +543,136 @@ footer .footer__container ul {
   padding: 0;
 }
 
+.contact h3 {
+  padding-bottom: 30px;
+}
+.contact p {
+  border-bottom: 0.9px solid #999999;
+  letter-spacing: 0.3px;
+  padding-bottom: 10px;
+}
+.contact :nth-child(2) {
+  padding-bottom: 20px;
+}
+.contact :nth-child(6) {
+  border-bottom: none;
+}
+.contact :nth-child(3) {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.contact :nth-child(4) {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.recent-posts h4 {
+  padding-bottom: 25px;
+}
+.recent-posts li {
+  font-size: 1.3rem;
+  line-height: 44px;
+  letter-spacing: 0.3px;
+  border-bottom: 0.9px solid #999999;
+}
+.recent-posts :nth-child(6) {
+  border-bottom: none;
+}
+
+.subscribe-now h4 {
+  padding-bottom: 35px;
+}
+.subscribe-now p {
+  font-size: 1.3rem;
+  letter-spacing: 0.3px;
+}
+.subscribe-now button {
+  margin-left: 0;
+  padding: 10px;
+}
+.subscribe-now button:hover,
+.subscribe-now button:focus {
+  color: #f6f6f6;
+}
+.subscribe-now input,
+.subscribe-now textarea {
+  padding: 10px;
+  border: none;
+  background: rgb(78, 78, 78);
+  font-family: "Lora", serif;
+  margin-bottom: 20px;
+}
+.subscribe-now input::-webkit-input-placeholder, .subscribe-now textarea::-webkit-input-placeholder {
+  font-size: 1.3rem;
+  color: #f6f6f6;
+  font-style: italic;
+  text-align: justify;
+  font-family: "Lora", serif;
+}
+.subscribe-now input::-moz-placeholder, .subscribe-now textarea::-moz-placeholder {
+  font-size: 1.3rem;
+  color: #f6f6f6;
+  font-style: italic;
+  text-align: justify;
+  font-family: "Lora", serif;
+}
+.subscribe-now input:-ms-input-placeholder, .subscribe-now textarea:-ms-input-placeholder {
+  font-size: 1.3rem;
+  color: #f6f6f6;
+  font-style: italic;
+  text-align: justify;
+  font-family: "Lora", serif;
+}
+.subscribe-now input::-ms-input-placeholder, .subscribe-now textarea::-ms-input-placeholder {
+  font-size: 1.3rem;
+  color: #f6f6f6;
+  font-style: italic;
+  text-align: justify;
+  font-family: "Lora", serif;
+}
+.subscribe-now input::placeholder,
+.subscribe-now textarea::placeholder {
+  font-size: 1.3rem;
+  color: #f6f6f6;
+  font-style: italic;
+  text-align: justify;
+  font-family: "Lora", serif;
+}
+.subscribe-now input:focus,
+.subscribe-now textarea:focus {
+  border-bottom: 1px solid #539908;
+  outline: none;
+}
+
+.socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 0.9px solid #999999;
+}
+.socials-list li {
+  padding: 15px 20px 0 0;
+  color: #f6f6f6;
+}
+.socials-list li:hover,
+.socials-list li:focus {
+  opacity: 0.1;
+  color: #539908;
+  opacity: 0.5;
+  cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
 .copyright-footer {
   background: #2e2e2e;
 }
 .copyright-footer p {
-  text-align: center;
+  line-height: 44px;
+  font-family: "Raleway", sans-serif;
+  padding-left: 70px;
+}
+.copyright-footer p span {
+  color: #539908;
 }
