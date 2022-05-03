@@ -521,6 +521,31 @@ header .wrapper {
   font-size: 4rem;
 }
 
+.gallery ul {
+  padding: 0;
+}
+.gallery ul img {
+  width: 100vw;
+}
+
+.gallery__row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery__row-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 footer {
   background: #333333;
   padding: 90px 0 50px 0;
