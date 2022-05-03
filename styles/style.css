@@ -378,9 +378,11 @@ body > p span {
 
 footer h3 {
   color: #539908;
+  font-size: 2.4rem;
 }
 footer h4 {
   color: #f6f6f6;
+  font-size: 1.4rem;
 }
 
 .recent-posts li {
@@ -529,16 +531,33 @@ footer {
   background: #333333;
   padding: 90px 0 50px 0;
 }
-footer .footer__wrapper {
+footer .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-bottom: 90px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footer__container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+footer .footer__container > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+footer .footer__container ul {
+  padding: 0;
 }
 
-body > p {
+.copyright-footer {
   background: #2e2e2e;
+}
+.copyright-footer p {
+  text-align: center;
 }

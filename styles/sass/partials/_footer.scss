@@ -1,13 +1,26 @@
 footer {
   background: $blackTwo;
   padding: 90px 0 50px 0;
-  .footer__wrapper {
+  .footer__container {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 90px;
+    justify-content: space-between;
+    p {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    > * {
+      flex: 1;
+    }
+    ul {
+      padding: 0;
+    }
   }
 }
 
-body > p {
+// Copyright 'footer'
+.copyright-footer {
   background: $black;
+  p {
+    text-align: center;
+  }
 }

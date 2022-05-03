@@ -100,9 +100,12 @@ body > p {
 footer {
   h3 {
     color: $green;
+    font-size: 2.4rem;
   }
   h4 {
     color: $white;
+    // Had to alter from style guide to make font match design
+    font-size: 1.4rem;
   }
 }
 .recent-posts li {
