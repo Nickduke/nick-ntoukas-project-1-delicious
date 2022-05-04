@@ -282,6 +282,10 @@ img {
 }
 
 html {
+  scroll-behavior: smooth;
+}
+
+html {
   font-size: 62.5%;
 }
 
@@ -521,8 +525,41 @@ header .wrapper {
   font-size: 4rem;
 }
 
+.restaurants__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 10em 0;
+  margin: auto 20em;
+}
+.restaurants__content h2 {
+  padding-top: 80px;
+}
+
+.restaurants__sticker {
+  position: absolute;
+  right: 36%;
+  padding-top: 55px;
+  z-index: 1;
+}
+.restaurants__sticker img {
+  max-height: 150px;
+}
+
 .gallery ul {
   padding: 0;
+  margin: 0;
 }
 .gallery ul img {
   width: 100vw;

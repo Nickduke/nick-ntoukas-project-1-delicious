@@ -1,0 +1,22 @@
+.restaurants__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 10em 0;
+  margin: auto 20em;
+  h2 {
+    padding-top: 80px;
+  }
+}
+
+.restaurants__sticker {
+  position: absolute;
+  right: 36%;
+  padding-top: 55px;
+  z-index: 1;
+  img {
+    max-height: 150px;
+  }
+}
