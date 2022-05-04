@@ -103,6 +103,7 @@ footer {
   li {
     padding: 15px 20px 0 0;
     color: $white;
+    transition: 0.2s linear;
   }
   li:hover,
   li:focus {
@@ -110,7 +111,7 @@ footer {
     color: $green;
     opacity: 0.5;
     cursor: pointer;
-    transition: 0.2s linear;
+    font-size: 1.72rem;
   }
 }
 
