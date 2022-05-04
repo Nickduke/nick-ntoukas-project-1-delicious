@@ -117,7 +117,8 @@ footer {
 
 // Copyright 'footer'
 .copyright-footer {
-  background: $black;
+  // Changed colour to better match design (darker grey)
+  background: rgb(43, 43, 43);
   p {
     line-height: 44px;
     font-family: $headingFont;

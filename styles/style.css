@@ -539,12 +539,17 @@ header .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
   padding: 10em 0;
   margin: auto 20em;
 }
 .restaurants__content h2 {
   padding-top: 80px;
+}
+.restaurants__content p {
+  padding-top: 15px;
+}
+.restaurants__content img {
+  position: relative;
 }
 
 .restaurants__sticker {
@@ -616,6 +621,7 @@ header .wrapper {
 .fa-quote-right {
   font-size: 5rem;
   color: #999999;
+  opacity: 0.5;
 }
 
 .fa-quote-left {
@@ -630,7 +636,7 @@ header .wrapper {
 .fa-chevron-left,
 .fa-chevron-right {
   font-size: 3rem;
-  color: #999999;
+  color: #f6f6f6;
   font-weight: bold;
 }
 
@@ -817,7 +823,7 @@ footer .footer__container ul {
 }
 
 .copyright-footer {
-  background: #2e2e2e;
+  background: rgb(43, 43, 43);
 }
 .copyright-footer p {
   line-height: 44px;
