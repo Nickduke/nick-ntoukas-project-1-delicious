@@ -285,6 +285,20 @@ html {
   scroll-behavior: smooth;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+  font-size: 3rem;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -832,4 +846,10 @@ footer .footer__container ul {
 }
 .copyright-footer p span {
   color: #539908;
+}
+
+.blog-header {
+  background: url(../../../assets/blog-1.jpeg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

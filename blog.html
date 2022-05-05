@@ -26,10 +26,19 @@
       href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
       rel="stylesheet"
     />
+    <!-- Copyright footer font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- SKIP LINK -->
+    <a href="#blog-main-content" class="skip-link">Skip to main content.</a>
     <!-- HEADER -->
-    <header class="header" id="home">
+    <header class="header blog-header" id="home">
       <div class="wrapper">
         <h1 class="logo">
           <a href="./index.html">delicious</a>
@@ -77,56 +86,146 @@
     </header>
 
     <!-- MAIN -->
-    <main id="blog-main-content"></main>
+    <main id="blog-main-content" class="wrapper">
+      <section class="blog-post">
+        <div class="blog-post-container">
+          <div class="title-container">
+            <h2>pineapple chicken</h2>
+            <div class="title-info">
+              <p>Posted at July 11, 2018</p>
+              <p>by Admin</p>
+              <p>in Recipes</p>
+            </div>
+          </div>
+          <div class="blog-text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio dolore ab ratione reprehenderit doloremque veritatis
+              deserunt tenetur facere, dicta, atque ipsum eos quae, mollitia
+              commodi quos cupiditate sequi ut at!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Explicabo animi minus ipsam cum iure. Consequuntur?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              molestiae commodi distinctio nisi tempore? Excepturi distinctio
+              qui ut quisquam, possimus quae recusandae! Iure illum repellat
+              quasi corporis, beatae necessitatibus fuga!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              recusandae nesciunt dicta dolor, cumque rerum dolorum assumenda
+              quam saepe consequatur sequi provident necessitatibus totam! Odit
+              impedit dolorem deleniti ducimus nostrum quasi officiis sit neque
+              magni repellendus iusto, accusantium alias aperiam maxime
+              mollitia? Ratione molestiae nemo, obcaecati tempore itaque
+              repudiandae quos.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              est consequuntur quis, incidunt mollitia natus quas cupiditate?
+              Omnis, incidunt laudantium beatae quibusdam nesciunt fugit
+              eligendi ab corporis minus quidem saepe ipsam reiciendis quae in
+              voluptatum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="tags-share">
+        <div class="tags-share-container">
+          <div class="tags-container">
+            <p><span>tags: </span>Recipes, Chicken, Pineapple, Mexican</p>
+          </div>
+          <div class="share-container">
+            <p>
+              <span>share: </span>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="blog-sally">
+        <div class="sally-container">
+          <img
+            src="./assets/blog-2.jpeg"
+            alt="Sally Lucas standing in front of pink wall"
+          />
+          <div class="sally-text-container">
+            <h4>sally lucas</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              officia modi, dolores, sequi sapiente omnis incidunt aliquam, sint
+              eius debitis earum dignissimos recusandae quo repudiandae corporis
+              dicta necessitatibus laborum. Quae culpa possimus magni. Ullam
+              expedita, sequi consectetur sint, impedit magni, aliquid ipsa fuga
+              quibusdam sit rerum optio reiciendis nemo ut.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="related-posts">
+        <h3>related posts</h3>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="contact">
-          <h3>delicious</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
-            aliquid architecto non aperiam dolor expedita facilis temporibus
-            alias est magni?
-          </p>
-          <p>A delicious restaurant</p>
-          <p>Toronto, Ontario</p>
-          <p>yum@food.com</p>
-          <p>+1 234 567 8910</p>
-        </div>
-        <div class="recent-posts">
-          <h4>recent posts</h4>
-          <ul>
-            <li>Beetroot water spinach okra</li>
-            <li>Chestnut ricebean pea catsear courgette</li>
-            <li>Summer purslane spinach arugala pea</li>
-            <li>Tatsoi aubergine spring onion bush</li>
-            <li>Tomato kale radicchio turnip chicory</li>
-            <li>Salsify pea sprouts fava bean</li>
-          </ul>
-        </div>
-        <div class="subscribe-now">
-          <h4>subscribe now</h4>
-          <p>Get all of our newest recipes immediately in your inbox!</p>
-          <label for=""></label>
-          <input type="text" />
-          <button>
-            <i class="fa-solid fa-right-long"></i>
-          </button>
-          <ul class="socials-list">
-            <li>
-              <i class="fa-brands fa-facebook-f"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-twitter"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-instagram"></i>
-            </li>
-          </ul>
+      <div class="wrapper">
+        <div class="footer__container">
+          <div class="contact">
+            <h3>delicious</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+              aliquid architecto non aperiam dolor expedita facilis temporibus
+              alias est magni?
+            </p>
+            <p>A delicious restaurant</p>
+            <p>Toronto, Ontario</p>
+            <p>yum@food.com</p>
+            <p>+1 234 567 8910</p>
+          </div>
+          <div class="recent-posts">
+            <h4>recent posts</h4>
+            <ul>
+              <li>Beetroot water spinach okra</li>
+              <li>Chestnut ricebean pea catsear courgette</li>
+              <li>Summer purslane spinach arugala pea</li>
+              <li>Tatsoi aubergine spring onion bush</li>
+              <li>Tomato kale radicchio turnip chicory</li>
+              <li>Salsify pea sprouts fava bean</li>
+            </ul>
+          </div>
+          <div class="subscribe-now">
+            <h4>subscribe now</h4>
+            <p>Get all of our newest recipes immediately in your inbox!</p>
+            <label for="email" class="sr-only" type="text">Email</label>
+            <input type="text" id="email" placeholder="Enter your email" />
+            <button>
+              <i class="fa-solid fa-right-long"></i>
+            </button>
+            <ul class="socials-list">
+              <li>
+                <i class="fa-brands fa-facebook-f"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
-    <p>Copyrights © 2015 by <span>POLAR</span>. All Rights Reserved.</p>
+    <section class="copyright-footer">
+      <p class="wrapper">
+        Copyrights © 2015 by <span>POLAR</span>. All Rights Reserved.
+      </p>
+    </section>
   </body>
 </html>
