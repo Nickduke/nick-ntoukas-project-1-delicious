@@ -299,6 +299,23 @@ html {
   left: 0;
 }
 
+h2 {
+  padding-bottom: 30px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  height: 3px;
+  background: #539908;
+  width: 55px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -494,11 +511,13 @@ header .wrapper {
 .tile-1 p {
   margin: 30px 200px;
 }
-.tile-1 h2 {
+
+.recipes-title {
   padding-bottom: 30px;
   position: relative;
 }
-.tile-1 h2::after {
+
+.recipes-title::after {
   content: "";
   height: 3px;
   background: #539908;
@@ -674,23 +693,6 @@ header .wrapper {
   opacity: 0.5;
 }
 
-h2 {
-  padding-bottom: 30px;
-  position: relative;
-}
-
-h2::after {
-  content: "";
-  height: 3px;
-  background: #539908;
-  width: 55px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
 footer {
   background: #333333;
   padding: 90px 0 50px 0;
@@ -853,6 +855,76 @@ footer .footer__container ul {
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
+}
+
+.blog-post-container {
+  margin: 15em 0 0 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+}
+.blog-post-container h2 {
+  font-size: 3.6rem;
+  letter-spacing: 1.1px;
+  line-height: 2.4rem;
+  padding: 0;
+}
+.blog-post-container h2::after {
+  display: none;
+}
+.blog-post-container p {
+  line-height: 2.4rem;
+  margin-bottom: 2em;
+  color: #333333;
+}
+
+.title-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #2e2e2e;
+}
+
+.tags-share-container {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+  padding: 1em;
+}
+.tags-share-container i {
+  margin: 0 0.3em;
+  font-size: 1.5rem;
+}
+.tags-share-container span {
+  text-transform: uppercase;
+  color: #2e2e2e;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.sally-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3em 0;
+  color: #333333;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+}
+
+.sally-text-container {
+  background: rgba(123, 123, 123, 0.112);
+  margin-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sally-text-container h4,
+.sally-text-container p {
+  margin: 0 2em;
+  color: #333333;
 }
 
 .contact-header {

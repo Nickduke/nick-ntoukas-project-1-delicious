@@ -60,20 +60,3 @@
   cursor: pointer;
   opacity: 0.5;
 }
-
-h2 {
-  padding-bottom: 30px;
-  position: relative;
-}
-
-h2::after {
-  content: '';
-  height: 3px;
-  background: $green;
-  width: 55px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
