@@ -852,4 +852,17 @@ footer .footer__container ul {
   background: url(../../../assets/blog-1.jpeg) center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 60vh;
+}
+
+.contact-header {
+  background: url(../../../assets/contact-1.jpeg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+.contact-banner img {
+  display: block;
+  width: 100%;
 }

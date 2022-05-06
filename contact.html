@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Delicious</title>
+    <title>📩 Contact - Delicious</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/style.css" />
     <!-- Font awesome -->
@@ -38,7 +38,7 @@
     <!-- SKIP LINK -->
     <a href="#home-main-content" class="skip-link">Skip to main content.</a>
     <!-- HEADER -->
-    <header class="header" id="home">
+    <header class="header contact-header">
       <div class="wrapper">
         <h1 class="logo">
           <a href="./index.html">delicious</a>
@@ -86,7 +86,75 @@
     </header>
 
     <!-- MAIN -->
-    <main id="contact-main-content"></main>
+    <main id="contact-main-content">
+      <section class="contact-page wrapper">
+        <div class="contact-container">
+          <div class="contact-form-container">
+            <h2>drop us a line</h2>
+            <form
+              action="#"
+              method="POST"
+              class="contact-form"
+              name="contact-form"
+            >
+              <div class="contact-row-1-container">
+                <label for="your-name" class="sr-only">Your Name</label>
+                <input type="text" id="your-name" placeholder="Your Name" />
+
+                <label for="your-email" class="sr-only">Your Email</label>
+                <input type="text" id="your-email" placeholder="Your Email" />
+              </div>
+              <label for="subject" class="sr-only">Subject</label>
+              <input type="text" id="subject" placeholder="Subject" />
+
+              <label for="contact-message" class="sr-only">Comment</label>
+              <textarea
+                name="contact-message"
+                id="contact-message"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button>
+                send message <i class="fa-solid fa-right-long"></i>
+              </button>
+              <!-- end of .contact-form -->
+            </form>
+            <!-- end of .contact-form-container -->
+          </div>
+          <div class="contact-details-container">
+            <div class="contact-text-details">
+              <h2>contact details</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repudiandae dicta illo minima ipsam ratione quasi nemo quod
+                corporis, debitis labore qui accusamus, quia temporibus
+                expedita.
+              </p>
+            </div>
+            <div class="contact-working-hours">
+              <h3>working hours</h3>
+              <p><span>MON - FRI:</span> 08:00am - 05:30pm</p>
+              <p>Not working on Saturday and Sunday!</p>
+            </div>
+            <div class="contact-info">
+              <h3>contact info</h3>
+              <p>A delicious restaurant</p>
+              <p>Toronto, Ontario</p>
+              <p>yum@food.com</p>
+              <p>+1 234 567 8910</p>
+            </div>
+            <!-- end of .contact-details-container -->
+          </div>
+          <!-- end of .contact-container -->
+        </div>
+        <!-- end of .contact-page-section -->
+      </section>
+
+      <section class="contact-banner">
+        <img src="./assets/contact-2.jpeg" alt="" />
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
