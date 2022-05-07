@@ -872,7 +872,7 @@ footer .footer__container ul {
 }
 .blog-post-container p {
   line-height: 2.4rem;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   color: #333333;
 }
 
@@ -885,7 +885,7 @@ footer .footer__container ul {
 
 .tags-share-container {
   border-bottom: 1px solid rgba(128, 128, 128, 0.295);
-  padding: 1em;
+  padding: 2em 0;
 }
 .tags-share-container i {
   margin: 0 0.3em;
@@ -902,7 +902,7 @@ footer .footer__container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3em 0;
+  padding: 4em 0;
   color: #333333;
   border-bottom: 1px solid rgba(128, 128, 128, 0.295);
 }
@@ -925,6 +925,160 @@ footer .footer__container ul {
 .sally-text-container p {
   margin: 0 2em;
   color: #333333;
+}
+
+.posts-container {
+  margin: 3em 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+}
+
+.posts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.posts-list-item {
+  padding-bottom: 2em;
+}
+.posts-list-item h4 {
+  padding-top: 2em;
+}
+.posts-list-item p {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.posts-list-item p span {
+  color: #2e2e2e;
+  cursor: pointer;
+}
+
+.first-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2em;
+}
+.first-comment img {
+  height: 50%;
+}
+
+.second-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2em;
+}
+.second-comment img {
+  height: 50%;
+}
+
+.comment-text-container {
+  margin: 0 2em;
+  padding: 1.2em;
+  background: rgba(123, 123, 123, 0.112);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.comment-text-container h5 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  color: #333333;
+}
+.comment-text-container h5 span {
+  font-weight: normal;
+  font-family: "Lora", serif;
+  font-size: 1.4rem;
+}
+.comment-text-container p {
+  color: #333333;
+  margin: 0.5em 0;
+}
+
+.comment-text-container p:nth-child(3) {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.comment-form-container {
+  padding: 4em 0 10em 0;
+}
+.comment-form-container p {
+  margin: 0.5em 0 1.5em 0;
+  font-style: italic;
+}
+
+.comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comment-form textarea {
+  margin: 2em 0;
+  border: 1px solid rgba(128, 128, 128, 0.372);
+  outline: none;
+  padding: 10px;
+  font-family: "Lora", serif;
+  resize: none;
+}
+.comment-form input::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  padding: 10px;
+}
+.comment-form input::-moz-placeholder {
+  font-family: "Lora", serif;
+  padding: 10px;
+}
+.comment-form input:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  padding: 10px;
+}
+.comment-form input::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  padding: 10px;
+}
+.comment-form input::placeholder {
+  font-family: "Lora", serif;
+  padding: 10px;
+}
+.comment-form button {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  max-width: 15%;
+  padding: 1.5em 0;
+}
+
+.comment-row-1-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comment-row-1-container input {
+  width: 32%;
+  min-height: 4.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.372);
+  outline: none;
+  padding: 10px;
 }
 
 .contact-header {
