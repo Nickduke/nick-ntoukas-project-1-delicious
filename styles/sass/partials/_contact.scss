@@ -11,3 +11,88 @@
   display: block;
   width: 100%;
 }
+
+.contact-page {
+  h2::after {
+    display: none;
+  }
+  button {
+    background: none;
+    border: 1px solid white;
+    color: $green;
+    transition: 0.2s ease-out;
+    max-width: 16%;
+    padding: 1.5em 0;
+  }
+  button:hover,
+  button:focus {
+    border-bottom: 1px solid $green;
+  }
+}
+
+.contact-container {
+  display: flex;
+}
+
+.contact-row-1-container {
+  display: flex;
+  justify-content: space-between;
+  input {
+    width: 48%;
+  }
+}
+
+.contact-form-container {
+  width: 200%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  // align-items: flex-end;
+  padding: 7em 4em;
+  textarea {
+    margin: 1em 0;
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-family: $bodyFont;
+    resize: none;
+    background: rgba(123, 123, 123, 0.074);
+  }
+  input {
+    min-height: 4.5rem;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+    background: rgba(123, 123, 123, 0.074);
+  }
+  input::placeholder {
+    font-family: $bodyFont;
+    padding: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  input:focus,
+  textarea:focus {
+    border-bottom: 1px solid $green;
+    outline: none;
+  }
+}
+
+// contact details
+.contact-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 2em;
+  padding: 7em 4em;
+}
+
+.contact-page {
+  background: rgba(123, 123, 123, 0.039);
+}

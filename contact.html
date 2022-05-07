@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>📩 Contact - Delicious</title>
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="./styles/style.css" />
+
     <!-- Font awesome -->
     <script
       src="https://kit.fontawesome.com/dbae5020f0.js"
@@ -33,6 +32,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
       rel="stylesheet"
     />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <!-- SKIP LINK -->
@@ -87,16 +88,16 @@
 
     <!-- MAIN -->
     <main id="contact-main-content">
-      <section class="contact-page wrapper">
-        <div class="contact-container">
+      <section class="contact-page">
+        <div class="contact-container wrapper">
           <div class="contact-form-container">
-            <h2>drop us a line</h2>
             <form
               action="#"
               method="POST"
               class="contact-form"
               name="contact-form"
             >
+              <h2>drop us a line</h2>
               <div class="contact-row-1-container">
                 <label for="your-name" class="sr-only">Your Name</label>
                 <input type="text" id="your-name" placeholder="Your Name" />
@@ -115,7 +116,7 @@
                 rows="10"
                 placeholder="Message"
               ></textarea>
-              <button>
+              <button class="contact-button">
                 send message <i class="fa-solid fa-right-long"></i>
               </button>
               <!-- end of .contact-form -->
@@ -123,7 +124,7 @@
             <!-- end of .contact-form-container -->
           </div>
           <div class="contact-details-container">
-            <div class="contact-text-details">
+            <div class="contact-text-details wrapper">
               <h2>contact details</h2>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.

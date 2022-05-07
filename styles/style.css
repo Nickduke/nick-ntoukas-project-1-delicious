@@ -259,7 +259,8 @@ template {
 }
 
 button {
-  font-family: "Lora", serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
   padding: 1.4rem 3rem;
   background: #539908;
   color: #f6f6f6;
@@ -1058,6 +1059,11 @@ footer .footer__container ul {
   font-family: "Lora", serif;
   padding: 10px;
 }
+.comment-form input:focus,
+.comment-form textarea:focus {
+  border-bottom: 1px solid #539908;
+  outline: none;
+}
 .comment-form button {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -1091,4 +1097,126 @@ footer .footer__container ul {
 .contact-banner img {
   display: block;
   width: 100%;
+}
+
+.contact-page h2::after {
+  display: none;
+}
+.contact-page button {
+  background: none;
+  border: 1px solid white;
+  color: #539908;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  max-width: 16%;
+  padding: 1.5em 0;
+}
+.contact-page button:hover,
+.contact-page button:focus {
+  border-bottom: 1px solid #539908;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-row-1-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-row-1-container input {
+  width: 48%;
+}
+
+.contact-form-container {
+  width: 200%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  padding: 7em 4em;
+}
+.contact-form-container textarea {
+  margin: 1em 0;
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-family: "Lora", serif;
+  resize: none;
+  background: rgba(123, 123, 123, 0.074);
+}
+.contact-form-container input {
+  min-height: 4.5rem;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin: 1em 0;
+  background: rgba(123, 123, 123, 0.074);
+}
+.contact-form-container input::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  padding: 10px;
+}
+.contact-form-container input::-moz-placeholder {
+  font-family: "Lora", serif;
+  padding: 10px;
+}
+.contact-form-container input:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  padding: 10px;
+}
+.contact-form-container input::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  padding: 10px;
+}
+.contact-form-container input::placeholder {
+  font-family: "Lora", serif;
+  padding: 10px;
+}
+.contact-form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+  border-bottom: 1px solid #539908;
+  outline: none;
+}
+
+.contact-details-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 2em;
+  padding: 7em 4em;
+}
+
+.contact-page {
+  background: rgba(123, 123, 123, 0.039);
 }

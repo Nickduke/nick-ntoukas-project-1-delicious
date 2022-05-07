@@ -168,6 +168,11 @@
     font-family: $bodyFont;
     padding: 10px;
   }
+  input:focus,
+  textarea:focus {
+    border-bottom: 1px solid $green;
+    outline: none;
+  }
   button {
     font-family: $headingFont;
     font-weight: bold;
