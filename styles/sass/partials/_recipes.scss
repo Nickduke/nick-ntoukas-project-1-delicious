@@ -64,9 +64,10 @@
 
 .menu-list {
   display: flex;
+  justify-content: center;
   li {
     display: flex;
-    margin: 3em 3em;
+    margin: 3em 3em 3em 1em;
   }
   i {
     font-size: 4rem;

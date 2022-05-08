@@ -317,6 +317,10 @@ h2::after {
   margin: auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -547,12 +551,15 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .menu-list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 3em 3em;
+  margin: 3em 3em 3em 1em;
 }
 .menu-list i {
   font-size: 4rem;
