@@ -1423,6 +1423,10 @@ footer .footer__container ul {
     padding: 5px;
     font-size: 1.2rem;
   }
+
+  .tile-1 h2 {
+    line-height: 25px;
+  }
 }
 @media (max-width: 400px) {
   .comment-form input::-webkit-input-placeholder, .comment-form textarea::-webkit-input-placeholder {
