@@ -31,12 +31,6 @@
   }
 }
 
-@media (max-width: 1430px) {
-  .restaurants__sticker {
-    padding-left: 40em;
-  }
-}
-
 // RECIPES SECTION CUSTOM MEDIA QUERY
 @media (max-width: 1900px) {
   .recipes__container-row-1,
@@ -47,12 +41,12 @@
   .recipes__container-row-1 {
     h2,
     p {
-      margin: 2em 3em;
+      margin: 1em 3em;
       opacity: 1;
-      // text-align: center;
+      text-align: center;
     }
     button {
-      margin-bottom: 1em;
+      margin: 2em 0;
     }
   }
   .recipes__container-row-2 {
@@ -61,6 +55,9 @@
   // Restaurants
   .restaurants__content {
     margin: 0 2em;
+  }
+  .tile-1 {
+    padding: 40px 40px;
   }
 }
 
@@ -73,9 +70,23 @@
       border-bottom: 1px solid rgba(128, 128, 128, 0.204);
     }
   }
+  .restaurants__sticker {
+    display: flex;
+    img {
+      width: 120px;
+      top: 12%;
+      left: 75%;
+      bottom: 0%;
+    }
+  }
 }
 
 // MOBILE
 @media (max-width: 600px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
+  .restaurants__sticker {
+    img {
+      display: none;
+    }
+  }
 }

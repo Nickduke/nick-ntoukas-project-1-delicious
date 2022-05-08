@@ -588,18 +588,18 @@ header .wrapper {
 .restaurants__content p {
   padding-top: 15px;
 }
-.restaurants__content img {
+
+.restaurants-image {
   position: relative;
+  padding-top: 115px;
 }
 
 .restaurants__sticker img {
-  max-height: 18rem;
   position: absolute;
   z-index: 1;
-  padding-top: 3em;
-  right: 78px;
-  margin-top: 1.4em;
-  display: block;
+  top: 0%;
+  left: 75%;
+  bottom: 100%;
 }
 
 .gallery ul {
@@ -767,7 +767,7 @@ footer .footer__container ul {
   letter-spacing: 0.3px;
 }
 .subscribe-now button {
-  padding: 11px;
+  padding: 10px;
 }
 .subscribe-now button:hover,
 .subscribe-now button:focus {
@@ -1273,11 +1273,6 @@ footer .footer__container ul {
             flex-direction: column;
   }
 }
-@media (max-width: 1430px) {
-  .restaurants__sticker {
-    padding-left: 40em;
-  }
-}
 @media (max-width: 1900px) {
   .recipes__container-row-1,
 .recipes__container-row-2 {
@@ -1292,11 +1287,12 @@ footer .footer__container ul {
 
   .recipes__container-row-1 h2,
 .recipes__container-row-1 p {
-    margin: 2em 3em;
+    margin: 1em 3em;
     opacity: 1;
+    text-align: center;
   }
   .recipes__container-row-1 button {
-    margin-bottom: 1em;
+    margin: 2em 0;
   }
 
   .recipes__container-row-2 {
@@ -1308,6 +1304,10 @@ footer .footer__container ul {
 
   .restaurants__content {
     margin: 0 2em;
+  }
+
+  .tile-1 {
+    padding: 40px 40px;
   }
 }
 @media (max-width: 800px) {
@@ -1321,7 +1321,22 @@ footer .footer__container ul {
   .menu-list .column-1 {
     border-bottom: 1px solid rgba(128, 128, 128, 0.204);
   }
+
+  .restaurants__sticker {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .restaurants__sticker img {
+    width: 120px;
+    top: 12%;
+    left: 75%;
+    bottom: 0%;
+  }
 }
 @media (max-width: 600px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
+  .restaurants__sticker img {
+    display: none;
+  }
 }
