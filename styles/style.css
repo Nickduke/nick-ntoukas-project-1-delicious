@@ -462,7 +462,6 @@ header .wrapper {
 
 .recipes__container {
   margin: 0 auto;
-  max-width: 100%;
 }
 .recipes__container img {
   display: block;
@@ -586,14 +585,14 @@ header .wrapper {
   position: relative;
 }
 
-.restaurants__sticker {
-  position: absolute;
-  right: 36%;
-  padding-top: 55px;
-  z-index: 1;
-}
 .restaurants__sticker img {
-  max-height: 150px;
+  max-height: 18rem;
+  position: absolute;
+  z-index: 1;
+  padding-top: 3em;
+  right: 78px;
+  margin-top: 1.4em;
+  display: block;
 }
 
 .gallery ul {
@@ -761,8 +760,7 @@ footer .footer__container ul {
   letter-spacing: 0.3px;
 }
 .subscribe-now button {
-  margin-left: 0;
-  padding: 10px;
+  padding: 11px;
 }
 .subscribe-now button:hover,
 .subscribe-now button:focus {
@@ -1219,4 +1217,104 @@ footer .footer__container ul {
 
 .contact-page {
   background: rgba(123, 123, 123, 0.039);
+}
+
+@media (max-width: 1000px) {
+  header .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 3em;
+  }
+
+  .logo {
+    padding-left: 7px;
+  }
+
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 30px;
+  }
+
+  .fa-quote-right {
+    display: none;
+  }
+
+  .fa-quote-left {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .reviews__wrapper {
+    margin: 0 3em;
+  }
+
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 1430px) {
+  .restaurants__sticker {
+    padding-left: 40em;
+  }
+}
+@media (max-width: 1900px) {
+  .recipes__container-row-1,
+.recipes__container-row-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .recipes__container-row-1 h2,
+.recipes__container-row-1 p {
+    margin: 2em 3em;
+    opacity: 1;
+  }
+  .recipes__container-row-1 button {
+    margin-bottom: 1em;
+  }
+
+  .recipes__container-row-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .restaurants__content {
+    margin: 0 2em;
+  }
+}
+@media (max-width: 800px) {
+  .menu-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .menu-list .column-1 {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.204);
+  }
+}
+@media (max-width: 600px) {
+  /* all of our styles for MOBILE devices will go within this breakpoint */
 }

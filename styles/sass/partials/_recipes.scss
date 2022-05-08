@@ -1,6 +1,5 @@
 .recipes__container {
   margin: 0 auto;
-  max-width: 100%;
   img {
     display: block;
     min-width: 100%;
@@ -29,6 +28,7 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+
   h2,
   p {
     margin: 30px 200px;

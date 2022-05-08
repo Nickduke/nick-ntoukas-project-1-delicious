@@ -17,11 +17,13 @@
 }
 
 .restaurants__sticker {
-  position: absolute;
-  right: 36%;
-  padding-top: 55px;
-  z-index: 1;
   img {
-    max-height: 150px;
+    max-height: 18rem;
+    position: absolute;
+    z-index: 1;
+    padding-top: 3em;
+    right: 78px;
+    margin-top: 1.4em;
+    display: block;
   }
 }
