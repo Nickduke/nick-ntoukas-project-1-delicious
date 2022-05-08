@@ -49,6 +49,12 @@
     margin: 0;
     padding: 10px 0;
   }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-form-container {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -123,6 +129,22 @@
     margin-top: 5em;
     h2 {
       font-size: 2.3rem;
+    }
+  }
+  .comment-form {
+    input::placeholder,
+    textarea::placeholder {
+      padding: 5px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .comment-form {
+    input::placeholder,
+    textarea::placeholder {
+      font-size: 0.8rem;
     }
   }
 }

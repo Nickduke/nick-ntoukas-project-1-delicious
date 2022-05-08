@@ -1113,7 +1113,7 @@ footer .footer__container ul {
   color: #539908;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
-  max-width: 16%;
+  max-width: 126px;
   padding: 1.5em 0;
 }
 .contact-page button:hover,
@@ -1155,7 +1155,7 @@ footer .footer__container ul {
   margin: 1em 0;
   outline: none;
   border: none;
-  padding: 20px;
+  padding: 10px;
   font-family: "Lora", serif;
   resize: none;
   background: rgba(123, 123, 123, 0.074);
@@ -1302,6 +1302,17 @@ footer .footer__container ul {
     margin: 0;
     padding: 10px 0;
   }
+
+  .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contact-form-container {
+    max-width: 100%;
+  }
 }
 @media (max-width: 1500px) {
   .posts-list-item {
@@ -1385,5 +1396,49 @@ footer .footer__container ul {
   }
   .blog-post-container h2 {
     font-size: 2.3rem;
+  }
+
+  .comment-form input::-webkit-input-placeholder, .comment-form textarea::-webkit-input-placeholder {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+
+  .comment-form input::-moz-placeholder, .comment-form textarea::-moz-placeholder {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+
+  .comment-form input:-ms-input-placeholder, .comment-form textarea:-ms-input-placeholder {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+
+  .comment-form input::-ms-input-placeholder, .comment-form textarea::-ms-input-placeholder {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+
+  .comment-form input::placeholder,
+.comment-form textarea::placeholder {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 400px) {
+  .comment-form input::-webkit-input-placeholder, .comment-form textarea::-webkit-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .comment-form input::-moz-placeholder, .comment-form textarea::-moz-placeholder {
+    font-size: 0.8rem;
+  }
+  .comment-form input:-ms-input-placeholder, .comment-form textarea:-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .comment-form input::-ms-input-placeholder, .comment-form textarea::-ms-input-placeholder {
+    font-size: 0.8rem;
+  }
+  .comment-form input::placeholder,
+.comment-form textarea::placeholder {
+    font-size: 0.8rem;
   }
 }
