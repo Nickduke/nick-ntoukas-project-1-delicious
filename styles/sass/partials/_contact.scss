@@ -3,13 +3,13 @@
   background: url(../../../assets/contact-1.jpeg) center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60vh;
+  height: 80vh;
 }
 
 // CONTACT-BANNER
 .contact-banner img {
   display: block;
-  width: 100%;
+  min-width: 100%;
 }
 
 .contact-page {
@@ -47,7 +47,7 @@
   display: flex;
   flex-direction: column;
   background: white;
-  // align-items: flex-end;
+  align-items: flex-end;
   padding: 7em 4em;
   textarea {
     margin: 1em 0;
@@ -75,7 +75,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 70%;
   }
   input:focus,
   textarea:focus {
@@ -91,8 +91,5 @@
   justify-content: space-evenly;
   padding-left: 2em;
   padding: 7em 4em;
-}
-
-.contact-page {
   background: rgba(123, 123, 123, 0.039);
 }

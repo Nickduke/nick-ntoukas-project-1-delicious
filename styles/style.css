@@ -430,13 +430,23 @@ footer h4 {
   font-family: "Lora", serif;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1em 3em;
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -594,6 +604,11 @@ header .wrapper {
   padding-top: 115px;
 }
 
+.restaurants__sticker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .restaurants__sticker img {
   position: absolute;
   z-index: 1;
@@ -860,7 +875,7 @@ footer .footer__container ul {
   background: url(../../../assets/blog-1.jpeg) center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60vh;
+  height: 80vh;
 }
 
 .blog-post-container {
@@ -1096,12 +1111,12 @@ footer .footer__container ul {
   background: url(../../../assets/contact-1.jpeg) center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60vh;
+  height: 80vh;
 }
 
 .contact-banner img {
   display: block;
-  width: 100%;
+  min-width: 100%;
 }
 
 .contact-page h2::after {
@@ -1149,6 +1164,9 @@ footer .footer__container ul {
       -ms-flex-direction: column;
           flex-direction: column;
   background: white;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 7em 4em;
 }
 .contact-form-container textarea {
@@ -1199,7 +1217,7 @@ footer .footer__container ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 70%;
 }
 .contact-form-container input:focus,
 .contact-form-container textarea:focus {
@@ -1220,9 +1238,6 @@ footer .footer__container ul {
           justify-content: space-evenly;
   padding-left: 2em;
   padding: 7em 4em;
-}
-
-.contact-page {
   background: rgba(123, 123, 123, 0.039);
 }
 
@@ -1313,6 +1328,9 @@ footer .footer__container ul {
   .contact-form-container {
     max-width: 100%;
   }
+  .contact-form-container form {
+    width: 100%;
+  }
 }
 @media (max-width: 1500px) {
   .posts-list-item {
@@ -1373,11 +1391,6 @@ footer .footer__container ul {
     border-bottom: 1px solid rgba(128, 128, 128, 0.204);
   }
 
-  .restaurants__sticker {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .restaurants__sticker img {
     width: 120px;
     top: 12%;
@@ -1388,7 +1401,10 @@ footer .footer__container ul {
 @media (max-width: 600px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
   .restaurants__sticker img {
-    display: none;
+    width: 100px;
+    top: 16%;
+    left: 80%;
+    bottom: 0%;
   }
 
   .blog-post-container {
@@ -1428,6 +1444,14 @@ footer .footer__container ul {
     line-height: 25px;
   }
 }
+@media (max-width: 500px) {
+  .restaurants__sticker img {
+    width: 80px;
+    top: 22%;
+    left: 80%;
+    bottom: 0%;
+  }
+}
 @media (max-width: 400px) {
   .comment-form input::-webkit-input-placeholder, .comment-form textarea::-webkit-input-placeholder {
     font-size: 0.8rem;
@@ -1444,5 +1468,12 @@ footer .footer__container ul {
   .comment-form input::placeholder,
 .comment-form textarea::placeholder {
     font-size: 0.8rem;
+  }
+
+  .restaurants__sticker img {
+    width: 60px;
+    top: 85px;
+    left: 84%;
+    bottom: 0%;
   }
 }

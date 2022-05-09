@@ -1,6 +1,12 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 3em;
+}
+
 .nav__list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
   margin: 0;
   padding: 0;
