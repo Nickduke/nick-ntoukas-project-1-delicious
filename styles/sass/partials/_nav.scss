@@ -2,6 +2,19 @@
   display: flex;
   justify-content: space-between;
   margin: 1em 3em;
+  button {
+    cursor: pointer;
+    bottom: 41rem;
+    color: $black;
+    background: none;
+    border: none;
+    display: none;
+    transition: 0.2s linear;
+  }
+  button:hover,
+  button:focus {
+    color: $green;
+  }
 }
 
 .nav__list {
@@ -14,4 +27,17 @@
 
 nav a {
   padding: 0 20px;
+}
+
+.fa-bars {
+  font-size: 3.5rem;
+}
+
+.nav-toggle {
+  background: black;
+  transform: translateX(0);
+}
+.show-links {
+  height: 10rem;
+  display: flex;
 }
