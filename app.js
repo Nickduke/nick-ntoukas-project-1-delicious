@@ -49,6 +49,11 @@ blogForm.addEventListener('submit', (e) => {
     console.log(websiteInput);
     console.log(commentInput);
 
+    // current date and time
+    let today = new Date();
+    document.createTextNode(today);
+    console.log(today);
+
     newComment.innerHTML = `<div class="second-comment">
               <img src="./assets/blog-6.jpeg" alt="Photo of user" />
               <div class="comment-text-container">
@@ -56,7 +61,7 @@ blogForm.addEventListener('submit', (e) => {
                 <p>
                   ${commentInput}
                 </p>
-                <p>Jul 17, 2015 at 15 hours ago</p>
+                <p>${today}</p>
               </div>
               <!-- end of .second-comment -->
             </div>`;
