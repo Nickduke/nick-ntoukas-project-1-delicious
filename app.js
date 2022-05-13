@@ -44,16 +44,17 @@ blogForm.addEventListener('submit', (e) => {
     const websiteInput = document.getElementById('website').value;
     const commentInput = document.getElementById('comment').value;
 
-    console.log(nameInput);
-    console.log(emailInput);
-    console.log(websiteInput);
-    console.log(commentInput);
+    // console.log(nameInput);
+    // console.log(emailInput);
+    // console.log(websiteInput);
+    // console.log(commentInput);
 
     // current date and time
     let today = new Date();
     document.createTextNode(today);
-    console.log(today);
+    // console.log(today);
 
+    // Best not to use innerHTML in this case for security reasons - find better way
     newComment.innerHTML = `<div class="second-comment">
               <img src="./assets/blog-6.jpeg" alt="Photo of user" />
               <div class="comment-text-container">
@@ -82,4 +83,14 @@ blogForm.addEventListener('submit', (e) => {
   } else {
     alert('Please fill out both the name and email fields.');
   }
+  // Change comment count
+  let commentCount = document.getElementById('comment-count').textContent;
+  console.log(document.getElementById('comment-count'));
+
+  const getCommentCount = () => {
+    return commentCount++;
+  };
+  getCommentCount();
+
+  console.log(getCommentCount());
 });
