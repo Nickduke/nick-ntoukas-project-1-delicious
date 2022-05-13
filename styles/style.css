@@ -449,8 +449,7 @@ footer h4 {
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
 }
-.nav button:hover,
-.nav button:focus {
+.nav button:hover {
   color: #539908;
 }
 
@@ -487,6 +486,10 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 header {
@@ -1341,6 +1344,10 @@ footer .footer__container ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media (max-width: 1500px) {
@@ -1361,13 +1368,6 @@ footer .footer__container ul {
     display: flex;
     padding: 0;
     margin-right: 1.5em;
-  }
-
-  .show-links {
-    height: 10rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 @media (max-width: 1900px) {

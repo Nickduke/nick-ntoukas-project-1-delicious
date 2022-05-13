@@ -11,8 +11,7 @@
     display: none;
     transition: 0.2s linear;
   }
-  button:hover,
-  button:focus {
+  button:hover {
     color: $green;
   }
 }
@@ -37,7 +36,9 @@ nav a {
   background: black;
   transform: translateX(0);
 }
+
 .show-links {
   height: 10rem;
   display: flex;
+  flex-direction: column;
 }
