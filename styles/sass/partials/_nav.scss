@@ -19,7 +19,7 @@
 .nav__list {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -28,17 +28,17 @@ nav a {
   padding: 0 20px;
 }
 
-.fa-bars {
-  font-size: 3.5rem;
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
-.nav-toggle {
-  background: black;
-  transform: translateX(0);
-}
-
-.show-links {
-  height: 10rem;
-  display: flex;
-  flex-direction: column;
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: $black;
 }

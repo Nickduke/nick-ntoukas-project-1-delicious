@@ -1,18 +1,18 @@
 // Hamburger Menu
-const navToggle = document.querySelector('.nav-toggle');
-const navList = document.querySelector('.nav__list');
-const hamburger = document.querySelector('.fa-bars');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav__list');
 
-// navToggle.addEventListener('click', () => {
-//   // console.log(navList.classList);
-//   // console.log(navList.classList.contains('nav__list'));
-//   if (navList.classList.contains('show-links')) {
-//     navList.classList.remove('show-links');
-//   } else {
-//     navList.classList.add('show-links');
-//     hamburger.remove();
-//   }
-// });
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+
+document.querySelectorAll('.nav-link').forEach((n) =>
+  n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+  })
+);
 
 // Blog Comments
 // Query DOM for form element
