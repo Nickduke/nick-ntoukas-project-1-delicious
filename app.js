@@ -28,31 +28,18 @@ blogForm.addEventListener('submit', (e) => {
   // query the DOM for all REQUIRED input elements and check whether they're empty
   const nameInput = document.getElementById('name').value;
   const emailInput = document.getElementById('email').value;
-  // console.log(nameInput);
-  // console.log(emailInput);
 
   // only if user has filled these required fields
   if (nameInput && emailInput) {
-    console.log('Thanks for filling out the required fields!');
+    // create new div element
+    const newComment = document.createElement('div');
 
     // grab the user's comment information from the form inputs
-    // create new div element with a class
-    const newComment = document.createElement('div');
-    // console.log(newComment);
-
-    // create an element that represents the text we have to add to our page
     const websiteInput = document.getElementById('website').value;
     const commentInput = document.getElementById('comment').value;
 
-    // console.log(nameInput);
-    // console.log(emailInput);
-    // console.log(websiteInput);
-    // console.log(commentInput);
-
     // current date and time
     let today = new Date();
-    document.createTextNode(today);
-    // console.log(today);
 
     // Best not to use innerHTML in this case for security reasons - find better way
     newComment.innerHTML = `<div class="second-comment">
@@ -67,30 +54,25 @@ blogForm.addEventListener('submit', (e) => {
               <!-- end of .second-comment -->
             </div>`;
 
-    const nameContent = document.createTextNode(nameInput);
-    console.log(nameContent);
+    const commentsContainer = document.querySelector('.comments-container');
 
-    const emailContent = document.createTextNode(emailInput);
-    console.log(emailContent);
+    commentsContainer.appendChild(newComment);
 
-    const websiteContent = document.createTextNode(websiteInput);
-    console.log(websiteContent);
+    // Change comment count -notworking
+    let commentCount = document.getElementById('comment-count').textContent;
+    commentCount = commentsContainer.childElementCount;
 
-    const commentContent = document.createTextNode(commentInput);
-    console.log(commentContent);
+    const addCommentCount = () => {
+      commentCount.innerHTML = commentCount;
+    };
 
-    document.querySelector('.comments-container').appendChild(newComment);
+    addCommentCount();
+    console.log(commentCount);
+
+    console.log(commentsContainer);
+
+    alert('Thanks for submitting a comment!');
   } else {
     alert('Please fill out both the name and email fields.');
   }
-  // Change comment count
-  let commentCount = document.getElementById('comment-count').textContent;
-  console.log(document.getElementById('comment-count'));
-
-  const getCommentCount = () => {
-    return commentCount++;
-  };
-  getCommentCount();
-
-  console.log(getCommentCount());
 });
