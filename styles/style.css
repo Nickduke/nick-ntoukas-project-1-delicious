@@ -1378,12 +1378,11 @@ footer .footer__container ul {
   }
 
   .nav__list-link {
-    padding-top: 1em;
+    padding: 0.5em;
   }
 
   .nav__list.active {
     left: 0;
-    text-align: right;
   }
 }
 @media (max-width: 1900px) {
